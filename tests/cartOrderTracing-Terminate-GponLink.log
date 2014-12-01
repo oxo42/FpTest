@@ -1,0 +1,147 @@
+2014-11-28 10:46:15.262322|INFO |cartbase:52|u2000_01:0|1412685518565::2::2|VALIDATION: For WO <LST-ONTDETAIL>:In dataset:
+Found param:<#WOD_OBJECT>, with value list : <U2000.LST-ONTDETAIL.obj>
+Found param:<#WOD_NVSET>, with value list : <U2000.LST-ONTDETAIL>
+Found param:<serialNumber>, with value list : <9999999999999999>
+Found param:<BASESODATA:startTime>, with value list : <1417171575260137409>
+Found param:<serialNumberOld>, with value list :
+2014-11-28 10:46:15.265170|DEBUG|cartplugin:29|u2000_01:0|1412685518565::2::2|Before processCommand(), In dataset:
+Found param:<#WOD_OBJECT>, with value list : <U2000.LST-ONTDETAIL.obj>
+Found param:<#WOD_NVSET>, with value list : <U2000.LST-ONTDETAIL>
+Found param:<serialNumber>, with value list : <9999999999999999>
+Found param:<BASESODATA:startTime>, with value list : <1417171575260137409>
+Found param:<serialNumberOld>, with value list :
+Found param:<#NE_COMMAND>, with value list : <LST-ONTDETAIL::ALIAS=9999999999999999:0::;>
+2014-11-28 10:46:15.266156|INFO |simplugin:8|u2000_01:0|1412685518565::2::2|Reading file <../../SystemTest/CartSimulatorFiles/U2000/LST-ONTDETAIL.wo>.
+2014-11-28 10:46:15.267189|INFO |simplugin:10|u2000_01:0|1412685518565::2::2|Parsing file <../../SystemTest/CartSimulatorFiles/U2000/LST-ONTDETAIL.wo>.
+2014-11-28 10:46:15.273604|INFO |simplugin:11|u2000_01:0|1412685518565::2::2|EX:Next exchange created.
+2014-11-28 10:46:15.274368|DEBUG|cartplugin:30|u2000_01:0|1412685518565::2::2|At commandComplete(), In dataset:
+Found param:<#WOD_OBJECT>, with value list : <U2000.LST-ONTDETAIL.obj>
+Found param:<#WOD_NVSET>, with value list : <U2000.LST-ONTDETAIL>
+Found param:<serialNumber>, with value list : <9999999999999999>
+Found param:<BASESODATA:startTime>, with value list : <1417171575260137409>
+Found param:<serialNumberOld>, with value list :
+Found param:<#NE_COMMAND>, with value list : <LST-ONTDETAIL::ALIAS=9999999999999999:0::;>
+Found param:<_operation>, with value list : <LST-ONTDETAIL>
+Found param:<_resultCode>, with value list : <0>
+Found param:<#NE_RESPONSE>, with value list : <\r\n\n   7340032 2014-09-10 13:57:44\r\nM  5 COMPLD\r\n   EN=0   ENDESC=Succeeded.\r\n   blktag=1\r\n   blkcount=1\r\n   blktotal=1\r\n\r\nONT information of the device \r\n---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\nDID\tFN\tSN\tPN\tONTID\tONTSTAT\tNAME\tALIAS\tCAPABPROF\tLINEPROF\tSERVPROF\tALMPROF\tVAPROF\tAUTH\tAUTHTIMEOUT\tSERIALNUM\tPWD\tMFORWARDMODE\tUV\tTRANSPARENT\tMACLEARN\tIGMPVLANTAGMODE\tIGMPVLAN\tIGMPSNOOPING\tDBATYPE\tCFGSTAT\tMATCHSTAT\tDISCSTAT\tVENDORID\tONTVER\tPRODUCTID\tEQUIPMENTID\tMAINSOFTVERSION\tSTANDBYSOFTVER\tBATTERYSTAT\tCURMACCOUNT\tONTRANG\tLOOPINNER\tLOOPOUTER\tSRVLEVELPROF\r\n7340032\t0\t1\t0\t9\tActive\thelpdeskgponvoiptest@liquidtelecom.net\t48575443D2591F0D\t--\tline-profile_10\tsrv-profile_10\t--\tVoIP_Internet\tSN\t--\t9999999999999999\t--\t--\t--\t--\t--\t--\t--\t--\t--\tNORMAL\tMATCH\t--\tHWTC\t130D4600\t19\t245\tV1R003C00S108\t--\tSUPPORTBUTINVALID\t0\t345\t--\t--\t--\r\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+2014-11-28 10:46:15.274465|INFO |cartplugin:33|u2000_01:0|1412685518565::2::2|Resuming execution.
+2014-11-28 10:46:15.274510|INFO |simplugin:21|u2000_01:0|1412685518565::2::2|EX:Next exchange deleted.
+2014-11-28 10:46:15.288547|INFO |cartbase:57|u2000_01:0|1412685518565::2::2|OUTGOING: For WO <LST-ONTDETAIL>: return status is <WOS_Completed>, In dataset:
+Found param:<#WOD_OBJECT>, with value list : <U2000.LST-ONTDETAIL.obj>
+Found param:<#WOD_NVSET>, with value list : <U2000.LST-ONTDETAIL>
+Found param:<serialNumber>, with value list : <9999999999999999>
+Found param:<BASESODATA:startTime>, with value list : <1417171575260137409>
+Found param:<serialNumberOld>, with value list :
+Found param:<#NE_COMMAND>, with value list : <LST-ONTDETAIL::ALIAS=9999999999999999:0::;>
+Found param:<_operation>, with value list : <LST-ONTDETAIL>
+Found param:<_resultCode>, with value list : <0>
+Found param:<groupWithBrackets>, with value list : <<foo>>
+Found param:<#NE_RESPONSE>, with value list : <\r\n\n   7340032 2014-09-10 13:57:44\r\nM  5 COMPLD\r\n   EN=0   ENDESC=Succeeded.\r\n   blktag=1\r\n   blkcount=1\r\n   blktotal=1\r\n\r\nONT information of the device \r\n---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\nDID\tFN\tSN\tPN\tONTID\tONTSTAT\tNAME\tALIAS\tCAPABPROF\tLINEPROF\tSERVPROF\tALMPROF\tVAPROF\tAUTH\tAUTHTIMEOUT\tSERIALNUM\tPWD\tMFORWARDMODE\tUV\tTRANSPARENT\tMACLEARN\tIGMPVLANTAGMODE\tIGMPVLAN\tIGMPSNOOPING\tDBATYPE\tCFGSTAT\tMATCHSTAT\tDISCSTAT\tVENDORID\tONTVER\tPRODUCTID\tEQUIPMENTID\tMAINSOFTVERSION\tSTANDBYSOFTVER\tBATTERYSTAT\tCURMACCOUNT\tONTRANG\tLOOPINNER\tLOOPOUTER\tSRVLEVELPROF\r\n7340032\t0\t1\t0\t9\tActive\thelpdeskgponvoiptest@liquidtelecom.net\t48575443D2591F0D\t--\tline-profile_10\tsrv-profile_10\t--\tVoIP_Internet\tSN\t--\t9999999999999999\t--\t--\t--\t--\t--\t--\t--\t--\t--\tNORMAL\tMATCH\t--\tHWTC\t130D4600\t19\t245\tV1R003C00S108\t--\tSUPPORTBUTINVALID\t0\t345\t--\t--\t--\r\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+Found param:<response>, with value list : <> <\n   7340032 2014-09-10 13:57:44> <M  5 COMPLD> <   EN=0   ENDESC=Succeeded.> <   blktag=1> <   blkcount=1> <   blktotal=1> <> <ONT information of the device > <---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> <DID\tFN\tSN\tPN\tONTID\tONTSTAT\tNAME\tALIAS\tCAPABPROF\tLINEPROF\tSERVPROF\tALMPROF\tVAPROF\tAUTH\tAUTHTIMEOUT\tSERIALNUM\tPWD\tMFORWARDMODE\tUV\tTRANSPARENT\tMACLEARN\tIGMPVLANTAGMODE\tIGMPVLAN\tIGMPSNOOPING\tDBATYPE\tCFGSTAT\tMATCHSTAT\tDISCSTAT\tVENDORID\tONTVER\tPRODUCTID\tEQUIPMENTID\tMAINSOFTVERSION\tSTANDBYSOFTVER\tBATTERYSTAT\tCURMACCOUNT\tONTRANG\tLOOPINNER\tLOOPOUTER\tSRVLEVELPROF> <7340032\t0\t1\t0\t9\tActive\thelpdeskgponvoiptest@liquidtelecom.net\t48575443D2591F0D\t--\tline-profile_10\tsrv-profile_10\t--\tVoIP_Internet\tSN\t--\t9999999999999999\t--\t--\t--\t--\t--\t--\t--\t--\t--\tNORMAL\tMATCH\t--\tHWTC\t130D4600\t19\t245\tV1R003C00S108\t--\tSUPPORTBUTINVALID\t0\t345\t--\t--\t--> <--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+Found param:<#REMATCH>, with value list : <   blkcount=1> <1> <Succeeded.>
+Found param:<completionCode>, with value list : <COMPLD>
+Found param:<errorCode>, with value list : <0>
+Found param:<errorDescription>, with value list : <Succeeded.>
+Found param:<guard>, with value list : <OK>
+Found param:<WO_STATUS>, with value list : <OK>
+Found param:<did>, with value list : <7340032>
+Found param:<fn>, with value list : <0>
+Found param:<sn>, with value list : <1>
+Found param:<pn>, with value list : <0>
+Found param:<ontid>, with value list : <9>
+Found param:<ontstat>, with value list : <Active>
+Found param:<name>, with value list : <helpdeskgponvoiptest@liquidtelecom.net>
+Found param:<alias>, with value list : <48575443D2591F0D>
+Found param:<capabprof>, with value list : <-->
+Found param:<lineprof>, with value list : <line-profile_10>
+Found param:<servprof>, with value list : <srv-profile_10>
+Found param:<almprof>, with value list : <-->
+Found param:<vaprof>, with value list : <VoIP_Internet>
+Found param:<auth>, with value list : <SN>
+Found param:<authtimeout>, with value list : <-->
+Found param:<serialnum>, with value list : <9999999999999999>
+Found param:<pwd>, with value list : <-->
+Found param:<mforwardmode>, with value list : <-->
+Found param:<uv>, with value list : <-->
+Found param:<transparent>, with value list : <-->
+Found param:<maclearn>, with value list : <-->
+Found param:<igmpvlantagmode>, with value list : <-->
+Found param:<igmpvlan>, with value list : <-->
+Found param:<igmpsnooping>, with value list : <-->
+Found param:<dbatype>, with value list : <-->
+Found param:<cfgstat>, with value list : <NORMAL>
+Found param:<matchstat>, with value list : <MATCH>
+Found param:<discstat>, with value list : <-->
+Found param:<vendorid>, with value list : <HWTC>
+Found param:<ontver>, with value list : <130D4600>
+Found param:<productid>, with value list : <19>
+Found param:<equipmentid>, with value list : <245>
+Found param:<mainsoftversion>, with value list : <V1R003C00S108>
+Found param:<standbysoftver>, with value list : <-->
+Found param:<batterystat>, with value list : <SUPPORTBUTINVALID>
+Found param:<curmaccount>, with value list : <0>
+Found param:<ontrang>, with value list : <345>
+Found param:<loopinner>, with value list : <-->
+Found param:<loopouter>, with value list : <-->
+Found param:<srvlevelprof>, with value list :
+Found param:<blkcount>, with value list : <1>
+Found param:<i>, with value list : <1>
+Found param:<lineNum>, with value list : <12>
+Found param:<responseToken>, with value list : <7340032> <0> <1> <0> <9> <Active> <helpdeskgponvoiptest@liquidtelecom.net> <48575443D2591F0D> <--> <line-profile_10> <srv-profile_10> <--> <VoIP_Internet> <SN> <--> <9999999999999999> <--> <--> <--> <--> <--> <--> <--> <--> <--> <NORMAL> <MATCH> <--> <HWTC> <130D4600> <19> <245> <V1R003C00S108> <--> <SUPPORTBUTINVALID> <0> <345> <--> <--> <-->
+2014-11-28 10:46:15.298633|INFO |cartbase:52|u2000_01:0|1412685518565::2::1|VALIDATION: For WO <DEL-ONT>:In dataset:
+Found param:<#WOD_OBJECT>, with value list : <U2000.DEL-ONT.obj>
+Found param:<#WOD_NVSET>, with value list : <U2000.DEL-ONT>
+Found param:<ontId>, with value list : <9>
+Found param:<did>, with value list : <7340032>
+Found param:<frameNumber>, with value list : <0>
+Found param:<slotNumber>, with value list : <1>
+Found param:<portNumber>, with value list : <0>
+Found param:<BASESODATA:startTime>, with value list : <1417171575298293432>
+2014-11-28 10:46:15.299009|DEBUG|cartplugin:29|u2000_01:0|1412685518565::2::1|Before processCommand(), In dataset:
+Found param:<#WOD_OBJECT>, with value list : <U2000.DEL-ONT.obj>
+Found param:<#WOD_NVSET>, with value list : <U2000.DEL-ONT>
+Found param:<ontId>, with value list : <9>
+Found param:<did>, with value list : <7340032>
+Found param:<frameNumber>, with value list : <0>
+Found param:<slotNumber>, with value list : <1>
+Found param:<portNumber>, with value list : <0>
+Found param:<BASESODATA:startTime>, with value list : <1417171575298293432>
+Found param:<#NE_COMMAND>, with value list : <DEL-ONT::DID=7340032\054FN=0\054SN=1\054PN=0\054ONTID=9\054DELCONFIG=TRUE:1::;>
+2014-11-28 10:46:15.299133|INFO |simplugin:8|u2000_01:0|1412685518565::2::1|Reading file <../../SystemTest/CartSimulatorFiles/U2000/DEL-ONT.wo>.
+2014-11-28 10:46:15.299589|INFO |simplugin:10|u2000_01:0|1412685518565::2::1|Parsing file <../../SystemTest/CartSimulatorFiles/U2000/DEL-ONT.wo>.
+2014-11-28 10:46:15.300476|INFO |simplugin:11|u2000_01:0|1412685518565::2::1|EX:Next exchange created.
+2014-11-28 10:46:15.300704|DEBUG|cartplugin:30|u2000_01:0|1412685518565::2::1|At commandComplete(), In dataset:
+Found param:<#WOD_OBJECT>, with value list : <U2000.DEL-ONT.obj>
+Found param:<#WOD_NVSET>, with value list : <U2000.DEL-ONT>
+Found param:<ontId>, with value list : <9>
+Found param:<did>, with value list : <7340032>
+Found param:<frameNumber>, with value list : <0>
+Found param:<slotNumber>, with value list : <1>
+Found param:<portNumber>, with value list : <0>
+Found param:<BASESODATA:startTime>, with value list : <1417171575298293432>
+Found param:<#NE_COMMAND>, with value list : <DEL-ONT::DID=7340032\054FN=0\054SN=1\054PN=0\054ONTID=9\054DELCONFIG=TRUE:1::;>
+Found param:<_operation>, with value list : <DEL-ONT>
+Found param:<_resultCode>, with value list : <0>
+Found param:<#NE_RESPONSE>, with value list : <\r\n\n   7340032 2014-06-25 08:39:36\r\nM  6 COMPLD\r\n   EN=0   ENDESC=Succeeded.\r\n >
+2014-11-28 10:46:15.300734|INFO |cartplugin:33|u2000_01:0|1412685518565::2::1|Resuming execution.
+2014-11-28 10:46:15.300750|INFO |simplugin:21|u2000_01:0|1412685518565::2::1|EX:Next exchange deleted.
+2014-11-28 10:46:15.301438|INFO |cartbase:57|u2000_01:0|1412685518565::2::1|OUTGOING: For WO <DEL-ONT>: return status is <WOS_Completed>, In dataset:
+Found param:<#WOD_OBJECT>, with value list : <U2000.DEL-ONT.obj>
+Found param:<#WOD_NVSET>, with value list : <U2000.DEL-ONT>
+Found param:<ontId>, with value list : <9>
+Found param:<did>, with value list : <7340032>
+Found param:<frameNumber>, with value list : <0>
+Found param:<slotNumber>, with value list : <1>
+Found param:<portNumber>, with value list : <0>
+Found param:<BASESODATA:startTime>, with value list : <1417171575298293432>
+Found param:<#NE_COMMAND>, with value list : <DEL-ONT::DID=7340032\054FN=0\054SN=1\054PN=0\054ONTID=9\054DELCONFIG=TRUE:1::;>
+Found param:<_operation>, with value list : <DEL-ONT>
+Found param:<_resultCode>, with value list : <0>
+Found param:<#NE_RESPONSE>, with value list : <\r\n\n   7340032 2014-06-25 08:39:36\r\nM  6 COMPLD\r\n   EN=0   ENDESC=Succeeded.\r\n >
+Found param:<response>, with value list : <> <\n   7340032 2014-06-25 08:39:36> <M  6 COMPLD> <   EN=0   ENDESC=Succeeded.> < >
+Found param:<#REMATCH>, with value list : <   EN=0   ENDESC=Succeeded.> <0> <Succeeded.>
+Found param:<completionCode>, with value list : <COMPLD>
+Found param:<errorCode>, with value list : <0>
+Found param:<errorDescription>, with value list : <Succeeded.>
+Found param:<guard>, with value list : <OK>
+Found param:<WO_STATUS>, with value list : <OK>
