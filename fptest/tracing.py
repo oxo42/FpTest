@@ -68,24 +68,25 @@ def parse_trace_file(filename):
 
     wo = WorkOrder()
     i = 0
-    for line in open(filename, 'r'):
-        i += 1
-        if parser_state == ParserState.looking_for_start:
-            wo_match = outgoing_workorder.match(line)
-            if wo_match is not None:
-                wo.name = wo_match.group('wo')
-                wo.status = wo_match.group('status')
-                parser_state = ParserState.parsing_outgoing_wo
-        elif parser_state == ParserState.parsing_outgoing_wo:
-            match = param_re.match(line)
-            if match is None:
-                trace.outgoing_workorders.append(wo)
-                wo = WorkOrder()
-                parser_state = ParserState.looking_for_start
-            else:
-                wo.add_param(match.group('name'), match.group('values'))
+    with open(filename, 'r') as f:
+        for line in f:
+            i += 1
+            if parser_state == ParserState.looking_for_start:
+                wo_match = outgoing_workorder.match(line)
+                if wo_match is not None:
+                    wo.name = wo_match.group('wo')
+                    wo.status = wo_match.group('status')
+                    parser_state = ParserState.parsing_outgoing_wo
+            elif parser_state == ParserState.parsing_outgoing_wo:
+                match = param_re.match(line)
+                if match is None:
+                    trace.outgoing_workorders.append(wo)
+                    wo = WorkOrder()
+                    parser_state = ParserState.looking_for_start
+                else:
+                    wo.add_param(match.group('name'), match.group('values'))
 
-    if parser_state == ParserState.parsing_outgoing_wo:
-        trace.outgoing_workorders.append(wo)
+        if parser_state == ParserState.parsing_outgoing_wo:
+            trace.outgoing_workorders.append(wo)
 
     return trace
