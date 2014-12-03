@@ -53,7 +53,7 @@ class FpTest(unittest.TestCase):
         """
         raise NotImplementedError('The request() method must return the request to send to FP')
 
-    def run_test(self):
+    def do_work(self):
         self.has_run = True
         self.zero_file(path.join(self.fp_node_dir, 'cartOrderTracing.00000.log'))
         self.zero_file(path.join(self.fp_node_dir, 'kpsaOrderTracing.00000.log'))
@@ -66,6 +66,6 @@ class FpTest(unittest.TestCase):
 
     def setUp(self):
         if not self.has_run:
-            self.run_test()
+            self.do_work()
 
 
