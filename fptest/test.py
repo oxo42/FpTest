@@ -44,6 +44,7 @@ class FpTest(unittest.TestCase):
         self.response = None
         self.cart_order_tracing = None
         self.kpsa_order_tracing = None
+        self.fp_response = None
         self.has_run = False
 
     def request(self):
@@ -61,6 +62,7 @@ class FpTest(unittest.TestCase):
         data = self.linearize_xml(self.request())
         self.response = requests.post(self.fp_url, data=data)
         self.response.connection.close()
+        self.fp_response = etree.XML(self.response.content)
         self.cart_order_tracing = parse_trace_file(path.join(self.fp_node_dir, 'cartOrderTracing.00000.log'))
         self.kpsa_order_tracing = parse_trace_file(path.join(self.fp_node_dir, 'kpsaOrderTracing.00000.log'))
 
@@ -68,4 +70,5 @@ class FpTest(unittest.TestCase):
         if not self.has_run:
             self.do_work()
 
-
+    def get_fp_status(self):
+        return self.fp_response.find('execStatus').text

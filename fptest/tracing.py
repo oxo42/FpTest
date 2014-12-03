@@ -39,6 +39,9 @@ class WorkOrder:
         self.status = status
         self.params = {}
 
+    def __str__(self):
+        return "WO %s: %s" % (self.name, self.status)
+
     def add_param(self, name, values):
         if values is None:
             self.params[name] = []

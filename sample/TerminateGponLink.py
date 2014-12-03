@@ -5,15 +5,18 @@ The product order takes a serial number, calls LST-ONTDETAIL to get the details 
 This test case ensures that the right commands happen in the right order
 
 """
-import unittest
-
 import fptest
 
 
-__author__ = 'John Oxley'
-
-
 class TerminateGponLinkTest(fptest.FpTest):
+    def test_outgoing_workorders_in_correct_order(self):
+        self.assertEqual('LST-ONTDETAIL', self.cart_order_tracing.outgoing_workorders[0].name)
+        self.assertEqual('DEL-ONT', self.cart_order_tracing.outgoing_workorders[1].name)
+
+    def test_command_for_lst_ontdetail(self):
+        self.assertEqual(['LST-ONTDETAIL::ALIAS=9999999999999999:0::;'],
+                         self.cart_order_tracing.outgoing_workorders[0].params['#NE_COMMAND'])
+
     def request(self):
         return """
 <request>
@@ -58,15 +61,3 @@ class TerminateGponLinkTest(fptest.FpTest):
     </so>
 </request>
 """
-
-    def test_outgoing_workorders_in_correct_order(self):
-        self.assertEqual('LST-ONTDETAIL', self.cart_order_tracing.outgoing_workorders[0].name)
-        self.assertEqual('DEL-ONT', self.cart_order_tracing.outgoing_workorders[1].name)
-
-    def test_command_for_lst_ontdetail(self):
-        self.assertEqual(['LST-ONTDETAIL::ALIAS=9999999999999999:0::;'],
-                         self.cart_order_tracing.outgoing_workorders[0].params['#NE_COMMAND'])
-
-
-if __name__ == '__main__':
-    unittest.main()
