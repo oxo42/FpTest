@@ -29,16 +29,7 @@ post-processing!
 Installation
 ============
 
-~~pip install fptest~~ # Coming soon :)
-
-```Shell
-cd ~
-git checkout https://github.com/oxo42/FpTest.git
-cd FpTest
-pip install -r requirements
-cd /path/to/fp/integration/tests
-PYTHONPATH=~/FpTest nosetests
-```
+	pip install fptest
 
 Setup
 =====
