@@ -1,5 +1,4 @@
 from os import path
-from codecs import open
 
 from setuptools import setup
 
@@ -7,11 +6,11 @@ from setuptools import setup
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the relevant file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
+# with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+#    long_description = f.read()
 
 setup(
-    name="fptest",
+    name='fptest',
     version='0.0.1',
     description='A TIBCO Fulfilment Provisioning test helper',
     # long_description=long_description,
