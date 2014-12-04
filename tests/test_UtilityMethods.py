@@ -24,6 +24,3 @@ class TestUtilityMethods(unittest.TestCase):
                                       b'</request>')
         expected = b"<?xml version='1.0' encoding='ASCII'?>\n<request><so/></request>"
         self.assertEqual(expected, actual)
-
-    def test_fail(self):
-        self.fail("Failing for build system testing")
