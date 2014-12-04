@@ -54,7 +54,7 @@ class FpTest(unittest.TestCase):
         """
         raise NotImplementedError('The request() method must return the request to send to FP')
 
-    def do_work(self):
+    def __do_work(self):
         self.has_run = True
         self.zero_file(path.join(self.fp_node_dir, 'cartOrderTracing.00000.log'))
         self.zero_file(path.join(self.fp_node_dir, 'kpsaOrderTracing.00000.log'))
@@ -68,7 +68,22 @@ class FpTest(unittest.TestCase):
 
     def setUp(self):
         if not self.has_run:
-            self.do_work()
+            self.__do_work()
 
     def get_fp_status(self):
+        """
+        Get the execStatus of the response XML
+        :return: execStatus
+        """
         return self.fp_response.find('execStatus').text
+
+    def get_first_wo(self, wo_name=None):
+        """
+        Get the first workorder from the list of outgoing work orders in cart_order_tracing
+        :param wo_name: Name to query
+        :return: Work Order
+        """
+        if wo_name is None:
+            return self.cart_order_tracing.outgoing_workorders[0]
+        else:
+            return next(wo for wo in self.cart_order_tracing.outgoing_workorders if wo.name == wo_name)

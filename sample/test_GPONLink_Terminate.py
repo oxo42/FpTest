@@ -9,13 +9,21 @@ import fptest
 
 
 class TerminateGponLinkTest(fptest.FpTest):
-    def test_outgoing_workorders_in_correct_order(self):
-        self.assertEqual('LST-ONTDETAIL', self.cart_order_tracing.outgoing_workorders[0].name)
-        self.assertEqual('DEL-ONT', self.cart_order_tracing.outgoing_workorders[1].name)
+    def test_workorders(self):
+        expected_workorders = [('LST-ONTDETAIL', 'WOS_Completed'), ('DEL-ONT', 'WOS_Completed')]
+        actual_workorders = [(wo.name, wo.status) for wo in self.cart_order_tracing.outgoing_workorders]
+        self.assertListEqual(expected_workorders, actual_workorders)
 
     def test_command_for_lst_ontdetail(self):
         self.assertEqual(['LST-ONTDETAIL::ALIAS=9999999999999999:0::;'],
                          self.cart_order_tracing.outgoing_workorders[0].params['#NE_COMMAND'])
+
+    def test_alias(self):
+        lst_ontdetail = self.get_first_wo('LST-ONTDETAIL')
+        self.assertRegex(lst_ontdetail.params['#NE_COMMAND'][0], r'ALIAS=9999999999999999')
+
+    def test_status(self):
+        self.assertEqual('OK', self.get_fp_status())
 
     def request(self):
         return """
