@@ -11,7 +11,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='fptest',
-    version='0.0.1',
+    version='0.0.2',
     description='A TIBCO Fulfilment Provisioning test helper',
     # long_description=long_description,
     packages=['fptest'],
