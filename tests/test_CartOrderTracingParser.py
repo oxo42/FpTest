@@ -58,3 +58,14 @@ class TestWorkOrderParamsAdder(unittest.TestCase):
         wo = WorkOrder()
         wo.add_param('foo', '<LST-ONTDETAIL::ALIAS=9999999999999999:0::;>')
         self.assertEquals(['LST-ONTDETAIL::ALIAS=9999999999999999:0::;'], wo.params['foo'])
+
+    def test_params_unescaped(self):
+        wo = WorkOrder()
+        wo.add_param('foo', '<DEL-ONT::DID=7340032\\054FN=0\\054SN=1\\054PN=0\\054ONTID=9\\054DELCONFIG=TRUE:1::;>')
+        self.assertEquals(['DEL-ONT::DID=7340032,FN=0,SN=1,PN=0,ONTID=9,DELCONFIG=TRUE:1::;'], wo.params['foo'])
+
+    def test_raw_params(self):
+        wo = WorkOrder()
+        wo.add_param('foo', '<DEL-ONT::DID=7340032\\054FN=0\\054SN=1\\054PN=0\\054ONTID=9\\054DELCONFIG=TRUE:1::;>')
+        self.assertEquals(['DEL-ONT::DID=7340032\\054FN=0\\054SN=1\\054PN=0\\054ONTID=9\\054DELCONFIG=TRUE:1::;'],
+                          wo.raw_params['foo'])

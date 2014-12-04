@@ -38,6 +38,7 @@ class WorkOrder:
         self.name = name
         self.status = status
         self.params = {}
+        self.raw_params = {}
 
     def __str__(self):
         return "WO %s: %s" % (self.name, self.status)
@@ -46,8 +47,10 @@ class WorkOrder:
         if values is None:
             self.params[name] = []
         else:
-            v = WorkOrder.balanced_braces([values])
-            self.params[name] = v
+            raw_values = WorkOrder.balanced_braces([values])
+            self.raw_params[name] = raw_values
+            decoded_values = [v.encode('latin1').decode('unicode_escape') for v in raw_values]
+            self.params[name] = decoded_values
 
 
 class ParserState(enum.Enum):
