@@ -14,7 +14,7 @@ class TestUtilityMethods(unittest.TestCase):
         self.assertTrue(os.stat('tmpfile').st_size > 0)
         FpTest.zero_file('tmpfile')
 
-        self.assertEquals(0, os.stat('tmpfile').st_size)
+        self.assertEqual(0, os.stat('tmpfile').st_size)
         os.remove('tmpfile')
 
     def test_xml_linearize(self):
@@ -23,5 +23,7 @@ class TestUtilityMethods(unittest.TestCase):
                                       b'    <so />\n'
                                       b'</request>')
         expected = b"<?xml version='1.0' encoding='ASCII'?>\n<request><so/></request>"
-        self.assertEquals(expected, actual)
+        self.assertEqual(expected, actual)
 
+    def test_fail(self):
+        self.fail("Failing for build system testing")
