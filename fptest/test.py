@@ -40,7 +40,7 @@ class FpTest(unittest.TestCase):
     def __init__(self, *args, **kwargs):
         super(FpTest, self).__init__(*args, **kwargs)
         self.fp_url = 'http://localhost:55000/aff'
-        self.fp_node_dir = './FPNode'
+        self.fp_node_dir = '../runtime/FPNode'
         self.response = None
         self.cart_order_tracing = None
         self.kpsa_order_tracing = None
