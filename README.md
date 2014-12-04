@@ -52,3 +52,13 @@ The following file structure is assumed
 
 The directory structure is important as FpTest will look in `../runtime/FPNode` for the cartOrderTracing log file.
 
+Samples
+=======
+
+There are two samples in the `/samples` directory of this project.  These are tests that I am successfully running
+against my instance of FP.
+
+Documentation to come
+=====================
+
+* Explanation of setting up cartridge simulators to pass / fail depending on input values
