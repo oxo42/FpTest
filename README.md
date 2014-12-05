@@ -1,4 +1,7 @@
-Overview [![Build Status](https://travis-ci.org/oxo42/FpTest.svg?branch=master)](https://travis-ci.org/oxo42/FpTest)
+[![PyPI version](https://badge.fury.io/py/FpTest.svg)](http://badge.fury.io/py/FpTest)
+[![Build Status](https://travis-ci.org/oxo42/FpTest.svg?branch=master)](https://travis-ci.org/oxo42/FpTest)
+
+Overview
 ========
 
 ```python
