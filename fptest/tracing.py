@@ -7,6 +7,7 @@ __author__ = 'John Oxley'
 class Trace:
     def __init__(self):
         self.outgoing_workorders = []
+        self.lines = []
 
 
 class WorkOrder:
@@ -73,10 +74,9 @@ def parse_trace_file(filename):
     parser_state = ParserState.looking_for_start
 
     wo = WorkOrder()
-    i = 0
     with open(filename, 'r') as f:
         for line in f:
-            i += 1
+            trace.lines.append(line)
             if parser_state == ParserState.looking_for_start:
                 wo_match = outgoing_workorder.match(line)
                 if wo_match is not None:
