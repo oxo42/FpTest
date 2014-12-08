@@ -6,14 +6,14 @@ from setuptools import setup
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the relevant file
-# with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
-#    long_description = f.read()
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='fptest',
     version='0.0.3',
     description='A TIBCO Fulfilment Provisioning test helper',
-    # long_description=long_description,
+    long_description=long_description,
     packages=['fptest'],
     url='https://github.com/oxo42/FpTest',
     author='John Oxley',
@@ -24,7 +24,7 @@ setup(
         # How mature is this project? Common values are
         # 3 - Alpha
         # 4 - Beta
-        #   5 - Production/Stable
+        # 5 - Production/Stable
         'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
