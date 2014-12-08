@@ -1,10 +1,17 @@
-[![PyPI version](https://badge.fury.io/py/FpTest.svg)](http://badge.fury.io/py/FpTest)
-[![Build Status](https://travis-ci.org/oxo42/FpTest.svg?branch=master)](https://travis-ci.org/oxo42/FpTest)
+FpTest
+======
+
+.. image:: https://pypip.in/v/FpTest/badge.png
+        :alt: Release Status
+        :target: https://pypi.python.org/pypi/fptest
+.. image:: https://travis-ci.org/oxo42/FpTest.svg?branch=master
+        :alt: Build Status
+        :target: https://travis-ci.org/oxo42/FpTest
 
 Overview
 ========
 
-```python
+.. code-block::python
 class TerminateGponLinkTest(fptest.FpTest):
     def test_workorders(self):
         expected_workorders = [('LST-ONTDETAIL', 'WOS_Completed'), ('DEL-ONT', 'WOS_Completed')]
@@ -19,20 +26,22 @@ class TerminateGponLinkTest(fptest.FpTest):
         <sod>
            <!-- Snipped for brevity -->
 """
-```
 
-`fptest.FpTest` extends `unittest.TestCase` and overrides the `setUp` method to post the contents of `request()` to FP.
-It then parses `../runtime/FPNode/cartOrderTracing.00000.log` into a format where it is much easier to pull information
+
+``fptest.FpTest`` extends ``unittest.TestCase`` and overrides the ``setUp`` method to post the contents of ``request()`` to FP.
+It then parses ``../runtime/FPNode/cartOrderTracing.00000.log`` into a format where it is much easier to pull information
 out of the trace file.
 
 You can then write tests in Python that are expressive and repeatable.  I am using
-[nosetests](https://nose.readthedocs.org/) and the `--with-xunit` flag to output a file of test results that Jenkins is
+[nosetests](https://nose.readthedocs.org/) and the ``--with-xunit`` flag to output a file of test results that Jenkins is
 post-processing!
 
 Installation
 ============
 
-	pip install fptest
+.. code-block:: shell
+
+    pip install fptest
 
 Setup
 =====
