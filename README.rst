@@ -12,7 +12,7 @@ FpTest
 Overview
 ========
 
-.. code-block:::: python
+.. code-block:: python
 
  class TerminateGponLinkTest(fptest.FpTest):
      def test_workorders(self):
@@ -43,7 +43,7 @@ post-processing!
 Installation
 ============
 
-.. code-block:::: shell
+::
 
     pip install fptest
 
