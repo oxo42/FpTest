@@ -42,7 +42,7 @@ class FpTest(unittest.TestCase):
         Get the current timestamp in the format yyyyMMddHHmmssSSSSSS to be used to generate unique orderIds
         :return: timestamp
         """
-        return datetime.now().strftime("%Y%m%d%H%M%S%N")
+        return datetime.now().strftime("%Y%m%d%H%M%S%f")
 
     def __init__(self, *args, **kwargs):
         super(FpTest, self).__init__(*args, **kwargs)
