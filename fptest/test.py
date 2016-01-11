@@ -1,12 +1,11 @@
-import requests
-
-__author__ = 'oxle019'
-
-from os import path
-from fptest.tracing import parse_trace_file
-
-from lxml import etree
 import unittest
+from datetime import datetime
+from os import path
+
+import requests
+from lxml import etree
+
+from fptest.tracing import parse_trace_file
 
 
 class FpTest(unittest.TestCase):
@@ -36,6 +35,14 @@ class FpTest(unittest.TestCase):
     def readfile(cls, filename):
         with open(filename, 'r') as f:
             return f.read()
+
+    @classmethod
+    def now(cls):
+        """
+        Get the current timestamp in the format yyyyMMddHHmmssSSSSSS to be used to generate unique orderIds
+        :return: timestamp
+        """
+        return datetime.now().strftime("%Y%m%d%H%M%S%N")
 
     def __init__(self, *args, **kwargs):
         super(FpTest, self).__init__(*args, **kwargs)

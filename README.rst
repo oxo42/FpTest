@@ -72,3 +72,4 @@ Documentation to come
 * Explanation of ``raw_params`` and ``params`` in the work order
 * Explanation of ``self.fp_url`` and ``self.fp_node_dir``
 * Explanation of ``Trace`` and ``WorkOrder``
+* Order id and ``self.now()``
