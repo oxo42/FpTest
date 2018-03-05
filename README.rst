@@ -1,7 +1,7 @@
 FpTest
 ======
 
-.. image:: https://pypip.in/v/FpTest/badge.png
+.. image:: https://img.shields.io/pypi/v/FpTest.svg
     :alt: Release Status
     :target: https://pypi.python.org/pypi/fptest
 
